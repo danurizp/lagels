@@ -43,3 +43,65 @@ input[type="radio"] + label::before {
     color: blue;
 }
 
+table {
+    width: 50%;
+    border-collapse: collapse;
+    
+    margin: 10px auto;
+    text-align: center;
+}
+
+caption {
+    padding: 5px;
+    color: #6251bb;
+    font-weight: bold;
+}
+
+thead {
+    border-left: solid 1px #39b9e8;
+    text-transform: uppercase;
+    background-color: #39b9e8;
+}
+
+thead td {
+    padding: 15px;
+}
+
+tbody {
+    border: solid 1px #6251bb;
+    border-top: solid 2px #6251bb;
+    border-bottom: solid 2px #6251bb;
+}
+
+tbody tr {
+    border-top: solid 1px #6251bb;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #d6f2fe;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tbody td:first-child {
+    border-right: solid 2px #6251bb;
+}
+
+tbody td[rowspan] {
+    border-left: solid 1px #6251bb;
+}
+
+tfoot {
+    background-color: #d1d1d1;
+    border: solid 1px #6251bb;
+    text-align: right;
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+td {
+    padding: 5px;
+}
+
