@@ -1,0 +1,45 @@
+h1 {
+    background-color: #ff5c5b;
+}
+
+#principal {
+    width: 90%;
+    max-width: 600px;
+    min-width: 300px;
+    
+    margin: auto;
+    padding: 20px 0px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    background-color: #ffcd64;
+    padding: 8px 5px;
+    
+    margin-top: 15px;
+    font-weight: bold;
+    
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: #ff5c5b;
+    color: white;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 5px 10px;
+}
+
+input[type="radio"] + label::before {
+    content: "AAAAA";
+    border: solid 1px red;
+    color: blue;
+}
+
