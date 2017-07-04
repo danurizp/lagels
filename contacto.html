@@ -12,7 +12,7 @@
 	</head>
 	
 	<body>
-		
+		<div id="pagina">
             <ul class="menu">
                 <li>
                     <a class="nav-inicio" href="index.html">Inicio</a>
@@ -24,93 +24,101 @@
         
             <h1>Contacto</h1>
             
-            <h2>Horarios de Atención</h2>
-            
-            <table border="1">
-                <caption>Horarios</caption>
+            <div class="horarios">
+                <h2>Horarios de Atención</h2>
 
-                <thead>
-                    <tr>
-                        <th>D&iacute;a</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
+                <table border="1">
 
-                <tfoot>
-                    <tr>
-                        <td colspan="2">*Despu&eacute;s de horarios laborales se responder&aacute; el d&iacute;a siguiente.</td>
-                    </tr>
-                </tfoot>
+                    <thead>
+                        <tr>
+                            <th>D&iacute;a</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>Lunes a Viernes</td>
-                        <td>10:00 - 14:00 y 16:00 a 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>S&aacute;bado y Domingo</td>
-                        <td>10:00 - 14:00</td>
-                    </tr>
-                    <tr>
-                        <td>D&iacute;as Festivos</td>
-                        <td>12:00 - 14:00</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">*Despu&eacute;s de horarios laborales se responder&aacute; el d&iacute;a siguiente.</td>
+                        </tr>
+                    </tfoot>
 
-            <form action="#" method="get" enctype="multipart/form-data">
+                    <tbody>
+                        <tr>
+                            <td>Lunes a Viernes</td>
+                            <td>10:00 - 14:00 y 16:00 a 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>S&aacute;bado y Domingo</td>
+                            <td>10:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>D&iacute;as Festivos</td>
+                            <td>12:00 - 14:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /horarios -->
+            <div id="principal">
+                <div class="formulario">
+                    <form action="#" method="get" enctype="multipart/form-data">
 
-                <fieldset>
-                    <legend>Datos de contacto</legend>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
 
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" />
-                    </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" name="email" />
+                            </p>
 
-                    <p>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" />
-                    </p>
-                </fieldset>
+                            <p>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" />
+                            </p>
+                        </fieldset>
 
-                <fieldset>
-                    <legend>Mensaje</legend>
-                    
-                    <p>
-                        &iquest;En qu&eacute; te podemos ayudar?
+                        <fieldset>
+                            <legend>Mensaje</legend>
 
-                        <br />
+                            <p>
+                                &iquest;En qu&eacute; te podemos ayudar?
 
-                        <input type="radio" id="prec" name="ayuda" value="prec" />
-                        <label for="prec">Precio</label>
+                                <br />
 
-                        <br />
+                                <input type="radio" id="prec" name="ayuda" value="prec" />
+                                <label for="prec">Precio</label>
 
-                        <input type="radio" id="prod" name="ayuda" value="prod" />
-                        <label for="prod">Producto</label>
+                                <br />
 
-                        <br />
+                                <input type="radio" id="prod" name="ayuda" value="prod" />
+                                <label for="prod">Producto</label>
 
-                        <input type="radio" id="otro" name="ayuda" value="otro" checked="checked" />
-                        <label for="otro">Otro</label>
-                    </p>
-                    
-                    <p>
-                        <label for="mensaje">
-                            &iquest;Cu&aacute;l es tu duda o inquietud?
-                        </label>
-                        <textarea id="mensaje" name="mensaje" rows="10" cols="20"></textarea>
-                    </p>
+                                <br />
 
-                </fieldset>
-			
-                <p>
-                    <input class= "btn" type="submit" value="Enviar" />
-                    <input class= "btn" type="reset" value="Reiniciar" />
-                </p>
-            </form>
-		
+                                <input type="radio" id="otro" name="ayuda" value="otro" checked="checked" />
+                                <label for="otro">Otro</label>
+                            </p>
+
+                            <p>
+                                <label for="mensaje">
+                                    &iquest;Cu&aacute;l es tu duda o inquietud?
+                                </label>
+                                <textarea id="mensaje" name="mensaje"></textarea>
+                            </p>
+
+                        </fieldset>
+
+                        <p class="botones">
+                            <input class= "btn" type="submit" value="Enviar" />
+                            <input class= "btn" type="reset" value="Reiniciar" />
+                        </p>
+                    </form>
+                </div>
+                <!-- /formulario -->
+            </div>
+            <!-- /principal -->
+		</div>
+        <!-- /pagina -->
 	</body>
 	
 </html>

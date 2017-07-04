@@ -12,11 +12,8 @@
 }
 
 h1 {
-        
     background: #e89dca;
-    
     color: #3d0aa3;
-    
 }
 
 h2 {
@@ -36,7 +33,6 @@ p {
 
 .ordinario img,
 .extraordinario img{
-    
     width: 400px;
     height: 400px;
 }
@@ -44,37 +40,5 @@ p {
 .extraordinario:hover {
     color: #3d0aa3;
     border: solid 1px #3d0aa3;
-}
-
-.resaltar {
-    background-color: #fbb134;
-}
-
-.inicio-parrafo {
-    font-size: 1.2em; /* 20px */
-    font-weight: bold;
-}
-
-.mas-vendido {
-    background-color: #6251bb;
-    color: white;
-    margin: 30px auto 0px;
-    padding: 20px 0px;
-}
-
-.mas-vendido h2 {
-    color: #fff;
-}
-
-.mas-vendido ol {
-    width: 50%;
-    margin: 20px auto;
-    list-style-position: inside;
-}
-
-.mas-vendido li {
-    border: solid 1px white;
-    padding: 10px;
-    margin: 5px auto;
 }
 

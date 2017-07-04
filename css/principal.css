@@ -5,16 +5,12 @@
 }
 
 body {
-    border-top: solid 5px #38373c;
+    border-top: solid 5px #839413;
 }
 
 h1 {
     text-align: center;
-    line-height: 130px;
-}
-
-h3 {
-    color: #6251bb;
+    line-height: 80px;
 }
 
 a {
@@ -25,10 +21,6 @@ a {
 a:hover {
     font-weight: bold;
     font-size: 1.1em;
-}
-
-a[target] {
-    color: #fcde46;
 }
 
 ul {
@@ -51,7 +43,6 @@ ul {
 
 .menu {
     background-color: #e8c97b;
-    
     text-align: right;
     padding: 8px 0px;
 }
@@ -64,36 +55,22 @@ ul {
 .menu a {
     color: #3d0aa3;
     display: inline-block;
-    
-/*    border: solid 5px red;*/
 }
 
 .menu a::before {
     content: "";
-/*    border: solid 2px blue;*/
     width: 30px;
     height: 30px;
     display: inline-block;
-    
     background-color: #3d0aa3;
     border-radius: 50%;
     vertical-align: middle;
-    
     margin-right: 3px;
-    
-    box-shadow: inset 0 0 0px 2px #e8c97b, 0 0 0px 1px #3d0aa3;
+    box-shadow: 0 0 0px 2px #fff;
 }
 
-a.nav-resenas::before {
-    background-color: #8071d0;
-}
-
-a.nav-presentaciones::before {
-    background-color: #fbb134;
-}
-
-a.nav-registro::before {
-    background-color: #ff5c5b;
+a.nav-contacto::before {
+    background-color: #ff7d46;
 }
 
 #pie::after {
@@ -106,17 +83,12 @@ a.nav-registro::before {
     display: inline-block;
     width: 67px;
     height: 66px;
-    
     text-indent: -200px;
     overflow: hidden;
 }
 
 .social.facebook {
     background-image: url('../img/ico_fb.png');
-}
-
-.social.youtube {
-    background-image: url('../img/ico_yt.png');
 }
 
 .social.twitter {

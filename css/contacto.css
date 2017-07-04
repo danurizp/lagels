@@ -1,8 +1,22 @@
 h1 {
-    background-color: #ff5c5b;
+    background-color: #ff7d46;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    padding: 10px;
 }
 
 #principal {
+    color: #3d0aa3;
+    background-color: #e89dca;
+}
+
+.formulario {
     width: 90%;
     max-width: 600px;
     min-width: 300px;
@@ -11,56 +25,56 @@ h1 {
     padding: 20px 0px;
 }
 
+.horarios {
+    background-color: #e8c97b;
+    padding: 10px;
+    color: #3d0aa3;
+}
+
 fieldset {
     border: none;
 }
 
 legend {
-    background-color: #ffcd64;
+    background-color: #3d0aa3;
     padding: 8px 5px;
-    
     margin-top: 15px;
     font-weight: bold;
-    
     width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.botones {
+    text-align: center;
 }
 
 .btn {
     border: none;
     background: none;
     cursor: pointer;
-    background-color: #ff5c5b;
-    color: white;
+    background-color: #ff7d46;
+    color: #fff;
     padding: 4px 12px;
     text-align: center;
     border-radius: 20px;
     margin: 5px 10px;
-}
-
-input[type="radio"] + label::before {
-    content: "AAAAA";
-    border: solid 1px red;
-    color: blue;
+    width: 80px;
 }
 
 table {
     width: 50%;
     border-collapse: collapse;
-    
     margin: 10px auto;
     text-align: center;
 }
 
-caption {
-    padding: 5px;
-    color: #6251bb;
-    font-weight: bold;
-}
-
 thead {
-    border-left: solid 1px #39b9e8;
+    border: solid 1px #fff;
     text-transform: uppercase;
-    background-color: #39b9e8;
+    background-color: #ff7d46;
+    color: #fff;
 }
 
 thead td {
@@ -68,34 +82,24 @@ thead td {
 }
 
 tbody {
-    border: solid 1px #6251bb;
-    border-top: solid 2px #6251bb;
-    border-bottom: solid 2px #6251bb;
+    border: solid 1px #fff;
 }
 
-tbody tr {
-    border-top: solid 1px #6251bb;
+tbody td {
+    border: solid 1px #fff;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #d6f2fe;
+    background-color: #e89dca;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #eeeeee;
-}
-
-tbody td:first-child {
-    border-right: solid 2px #6251bb;
-}
-
-tbody td[rowspan] {
-    border-left: solid 1px #6251bb;
+    background-color: #e8c97b;
 }
 
 tfoot {
-    background-color: #d1d1d1;
-    border: solid 1px #6251bb;
+    background-color: #eeeeee;
+    border: solid 1px #fff;
     text-align: right;
     font-style: italic;
     font-size: 0.7em;
@@ -103,5 +107,17 @@ tfoot {
 
 td {
     padding: 5px;
+}
+
+#mensaje {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    
+}
+
+label[for="mensaje"] {
+    display: inline-block;
+    float: left;
 }
 
