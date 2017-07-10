@@ -5,7 +5,7 @@
 }
 
 body {
-    border-top: solid 5px #839413;
+    border-top: solid 5px #ff7d46;
 }
 
 h1 {
@@ -16,11 +16,6 @@ h1 {
 a {
     text-decoration: none;
     color: #000;
-}
-
-a:hover {
-    font-weight: bold;
-    font-size: 1.1em;
 }
 
 ul {
@@ -37,36 +32,51 @@ ul {
     color: white;
 }
 
-.encabezado {
-    background-color: #efefef;
+#encabezado {
+    background-color: #fff;
+    height: 80px;
+    background-image: url('../img/estambres-header.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#encabezado a {
+    margin-left: 10px;
+}
+
+#encabezado img{
+    height: 80%
 }
 
 .menu {
-    background-color: #e8c97b;
-    text-align: right;
-    padding: 8px 0px;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3d0aa3;
+    
+   
+    
 }
 
 .menu li {
-    display: inline-block;
-    margin-left: 5px;
+    float: left;
+    border-right: 1px solid #000;
+    
 }
 
 .menu a {
-    color: #3d0aa3;
-    display: inline-block;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
 }
 
-.menu a::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    background-color: #3d0aa3;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 3px;
-    box-shadow: 0 0 0px 2px #fff;
+.menu a:hover {
+    background-color: #ff7d46;
 }
 
 a.nav-contacto::before {
