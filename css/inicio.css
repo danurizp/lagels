@@ -6,13 +6,14 @@
 }
 
 .img-principal {
-    background-color: #e89dca;
     
-}
-
-.img-principal img{
-    width: 100%;
-    height: 480px;
+    height: 600px;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    
+    background-image:url(../img/img-principal.jpg);
+    background-size:100% 100%;
+        
 }
 
 #principal::after {
@@ -49,6 +50,12 @@ p {
     float: right;
 }
 
+.contenido-2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .texto-contenido {
     display: inline-block;
     width: 45%;
@@ -69,24 +76,63 @@ p {
     font-size: 1.5em;
 }
 
-.extraordinario {
-    background: #3d0aa3;
+em {
+    color: #3d0aa3;
 }
 
-.ordinario,
-.extraordinario {
-    float: left;
-    width: 50%;
+.ordinario {
+    height: 600px;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    
+    background-image:url(../img/estambres.jpg);
+    background-size:100% 100%;
 }
 
-.ordinario img,
-.extraordinario img{
-    width: 400px;
-    height: 400px;
+.ordinario::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.extraordinario {
+    height: 800px;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    
+    background-image:url(../img/productos.jpg);
+    background-size:100% 100%;
+}
+
+.extraordinario::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .ordinario h1{
     background: #aaa;
     color: #fff;
 }
+
+.catalogo h1{
+    background: #3d0aa3;
+    color: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{width:20px;height:20px;background-color:#102fc5;border:2px solid #fff;}
+.owl-theme .owl-dots .owl-dot span{width:20px;height:20px;border:2px solid #fff;}
+
+.item{
+    width:450px;
+    height:450px;
+    margin:0 auto;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+
 

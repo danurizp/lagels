@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<html lang="es">
 	
 	<head>
             <meta charset="utf-8" />
             <title>Lagels</title>
+             
+            <link rel="stylesheet" href="./css/owl.carousel.min.css">
+            <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+        
+            <link rel="stylesheet" href="./css/animate.css">
         
             <link type="text/css" rel="stylesheet" href="css/principal.css" />
             <link type="text/css" rel="stylesheet" href="css/inicio.css" />
+        
+            <script src="./js/jquery-2.0.2.js"></script>
+        
+            
+            <script src="./js/stellar.js"></script>
+            <script src="./js/owl.carousel.min.js"></script>
+            <script src="./js/wow.js"></script>
+        
+            <script>
+            $(document).ready(function() {
+                $.stellar({
+                    horizontalScrolling: false,
+                    verticalOffset: 0,
+                    responsive: true
+                          
+                });
+                
+              
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    margin: 10,
+                    //nav: true,
+                
+                    //navText: ["Anterior","Siguiente"],
+                
+                    loop: true,
+                    autoplay:true,
+                    autoplayTimeout:3000,
+                    autoplayHoverPause:false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 2
+                        }
+                    }
+                });
+                
+                new WOW().init();              
+              
+            })
+            
+          </script>
         
 	</head>
 	
@@ -18,13 +70,10 @@
             <div id="encabezado">
                 
                 <a href="/" title="Inicio" >
-                    <img src="img/lambsie.jpg" alt="Borregito" />
-                    <img src="img/logo3.png" alt="Lagels" />
+                    <img src="img/lambsie.png" alt="Borregito" class="wow swing"/>
+                    <img src="img/logo3.png" alt="Lagels" class="wow flip"/>
                 </a>
-                
-                
-
-                
+                                
             </div>
             <!-- /encabezado -->
             
@@ -36,23 +85,28 @@
                         <a class="nav-inicio" href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a class="nav-contacto" href="contacto.html">Contacto</a>
-                    </li>
+                        <a class="nav-mision" href="#mision">Misión</a>
+                     </li>
+                    <li>
+                        <a class="nav-vision" href="#vision">Visión</a>
+                     </li>
+                    <li>
+                        <a class="nav-catalogo" href="#catalogo">Catálogo</a>
+                     </li>
+                    
+                    
                 </ul>
                 
                 
                 
-                <div class="img-principal">
-                    <img src="img/img-principal.jpg" alt="Diadema" />
-                </div>
+                <div class="img-principal" data-stellar-background-ratio="0.1"></div>
+                            
                 
-                
-                
-                <div class="contenido-1">
+                <div id="mision" class="contenido-1">
                     
                     <h1>Lagels Tejido Artesanal</h1>
                 
-                    <h2>Lagels Tejido Artesanal le ofrece productos <b>100% hechos a mano</b>.</h2>
+                    <h2>Lagels Tejido Artesanal le ofrece productos <div class=" wow flash" data-wow-duration="2s" data-wow-offset="10"  data-wow-iteration="2"><em>100% hechos a mano.</em></div></h2>
                     
                     <div class="texto-contenido">
                         <p>
@@ -62,28 +116,58 @@
                     
                     <img src="img/hands-1032312_640.jpg" alt="Manos" /> 
                 </div>
+                <!-- /contenido-1 -->
                 
                 
+                <div id="vision"  class="contenido-2">
+                    <div class="ordinario" data-stellar-background-ratio="0.1">
+
+                        <h1>En Lagels transformamos lo ordinario.</h1>
+
+                    </div>
+                    <!-- /Ordinario -->
+                    <div class="extraordinario">
+                        <h1 >En algo extraordinario.</h1>
+                        
+                        
+                    </div>
+                    <!-- /Extraordinario -->
+                </div>
                 
-                
-                <div class="ordinario">
+                <div id="catalogo" class="catalogo">
+                    <h1>Catálogo</h1>
                     
-                    <h1>En Lagels transformamos lo ordinario.</h1>
-
-                    <p>
-                        <img src="img/estambres.jpg" alt="Estambres" />
-                    </p>
+                    <div class="owl-carousel owl-theme ">
+                                    <div class="item " >
+                                        <h2>Bebés</h2>
+                                        
+                                            
+                                        <img src="img/bebes.jpg" alt="Bebes" />
+                                        
+                                    </div>
+                                    <div class="item">
+                                        <h2>Niñ@s</h2>
+                                        <p>
+                                            <img src="img/ninos.jpg" alt="Niños" />
+                                        </p>
+                                    </div>
+                                    <div class="item " >
+                                        <h2>Damas</h2>
+                        <p>
+                            <img src="img/damas.jpg" alt="Damas" />
+                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <h2>Caballeros</h2>
+                        <p>
+                            <img src="img/caballeros.jpg" alt="Caballeros" />
+                        </p>
+                                    </div>
+                                </div>
+                    
+                    
+                    
                 </div>
-                <!-- /Ordinario -->
-                <div class="extraordinario">
-                    <h1>En algo extraordinario.</h1>
-
-                    <p>
-                        <img src="img/productos.jpg" alt="Productos Extraordinarios" />
-                    </p>
-                </div>
-                <!-- /Ordinario -->
-                <!-- /Bienvenida -->
 
             </div>
             <!-- /principal -->
@@ -94,10 +178,10 @@
                     <h2>Nuestras redes</h2>
                     <ul>
                         <li>
-                            <a class="social facebook" href="http://facebook.com/lagels" target="_blank">facebook</a>
+                            <a class="social facebook wow slideInLeft" data-wow-duration="2s" data-wow-offset="10" href="http://facebook.com/lagels" target="_blank">facebook</a>
                         </li>
                         <li>
-                            <a class="social twitter" href="https://twitter.com/LagelsTejido" target="_blank">twitter</a>
+                            <a class="social twitter wow slideInRight" data-wow-duration="2s" data-wow-offset="10" href="https://twitter.com/LagelsTejido" target="_blank">twitter</a>
                         </li>
                     </ul>
                 </div>
