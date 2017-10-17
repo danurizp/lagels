@@ -46,22 +46,16 @@ p {
     padding: 20px;
 }
 
-.contenido-1 img{
+#mision img{
     border-radius: 25px;
-    margin-right: 1%;
-    float: right;
+    width: 100%;
+    margin-bottom: 5%;
 }
 
 .contenido-2::after {
     content: "";
     display: block;
     clear: both;
-}
-
-.texto-contenido {
-    display: inline-block;
-    width: 45%;
-    text-align: left;
 }
 
 .contenido-1::after {
@@ -71,10 +65,7 @@ p {
 }
 
 .texto-contenido {
-    position: absolute;
-    top: 40%;
-    right: 50%;
-    width: 45%;
+    text-align: left;
     font-size: 1.5em;
 }
 
@@ -131,8 +122,7 @@ em {
     width:20px;height:20px;border:2px solid #fff;}
 
 .item{
-    width:450px;
-    height:500px;
+    width:80%;
     margin:0 auto;
 }
 
