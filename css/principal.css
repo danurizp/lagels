@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    line-height: 80px;
+    line-height: 52px;
     margin-top: 0;
 }
 
@@ -35,7 +35,7 @@ footer h2 {
     border-bottom: 2px solid #102fc5;
 }
 
-.navbar-brand > img {
+.navbar-brand img {
     margin-top: -10px;
     margin-left: 5px;
     height: 40px;
@@ -68,6 +68,10 @@ footer h2 {
 
 .navbar-header, #myNavbar {
     background: rgba(0,0,0, .2);
+}
+
+.navbar-header {
+    border-radius: 0 20px 20px 0;
 }
 
 .navbar ul{
