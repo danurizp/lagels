@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="es">
-	
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Lagels</title>
 
         <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
@@ -322,9 +321,6 @@
             <ol class="indicator"></ol>
         </div>
         
-        
-
-
         <script src="./js/jquery-2.0.2.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -412,8 +408,8 @@
                         // Figure out element to scroll to
                         var target = $(this.hash);
                         
-                        var difHeader = 50;
-                        if(target.selector == "#inicio"){
+                        var difHeader = -52;
+                        if(target.selector == "#inicio" || target.selector == "#ubicacion"){
                             difHeader = 0;
                         }
                         
@@ -423,10 +419,12 @@
                           // Only prevent default if animation is actually gonna happen
                           event.preventDefault();
                           
+                          var scrollTop = target.offset().top;
+                          console.log(scrollTop)
                           $('html, body').animate({
                               
-                            scrollTop: target.offset().top - difHeader
-                          }, 1000, function() {
+                            scrollTop: scrollTop
+                          }, 2000, function() {
                             // Callback after animation
                             // Must change focus!
                             var $target = $(target);
@@ -437,7 +435,11 @@
                               $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
                               $target.focus(); // Set focus again
                             };
+                            
+                            scrollBy(0, difHeader);
                           });
+                          
+                          
                         }
                       }
                     });
@@ -518,6 +520,7 @@ for (var i = 0; i < classname.length; i++) {
 //                      links = this.getElementsByTagName('a');
 //                    blueimp.Gallery(links, options);
 //                  };
+
         
         
 

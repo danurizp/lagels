@@ -161,17 +161,19 @@ em {
 .tit-lagels {
     margin-left: -122px;
     padding: 2%;
-    
+    width: 170px;
 }
 
 .tit-lagels:hover {
     margin-left: 0px;
+    -webkit-transition: 1s; /* Safari */
     transition: 1s;
     
 }
 
 .tit-lagels:not( :hover ){
     margin-left: -122px;
+    -webkit-transition: 1s; /* Safari */
     transition: 1s;
 }
 
