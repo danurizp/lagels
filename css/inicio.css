@@ -112,6 +112,7 @@ em {
 .catalogo h1{
     background: #3d0aa3;
     color: #fff;
+    margin-bottom: 0;
 }
 
 .owl-theme .owl-dots .owl-dot.active span{
@@ -196,8 +197,13 @@ em {
     border-bottom: 5px solid #ccc;
 }
 
+#bebes, #damas {
+    background: #e89dca;
+    color: #fff;
+}
+
 .bebes h2, .damas h2{
-    color: #e89dca;
+    color: #fff;
 }
 
 .ninos h2{
@@ -206,4 +212,18 @@ em {
 
 body {
     font-family: 'Capriola';
+}
+
+.ubicacion {
+    padding-bottom: 1%;
+    color: #fff;
+    background: #555;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
