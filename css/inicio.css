@@ -222,10 +222,27 @@ body {
     background: #555;
 }
 
+.ubicacion h1 {
+    background: #aaa;
+    color: #fff;
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 480px) {
+    .item{
+        height: 300px;
+    }
+    
+    .item img {
+        height: 70%;
+        padding: 1%;
+    }
 }

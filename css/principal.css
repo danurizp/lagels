@@ -72,7 +72,7 @@ footer h2 {
     background: rgba(0,0,0, .2);
 }
 
-.navbar-header {
+div.navbar-header {
     border-radius: 0 20px 20px 0;
 }
 
