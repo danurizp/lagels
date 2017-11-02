@@ -1,3 +1,4 @@
+<?php header("Content-type: text/css");?>
 #principal {
     
     text-align: center;
@@ -228,8 +229,8 @@ body {
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
