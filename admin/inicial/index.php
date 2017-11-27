@@ -1,6 +1,7 @@
 <?php
 // Para posicionar dentro de directorio general
 $pos_dir = "../../";
+require_once "{$pos_dir}includes/verificar_sesion.php";
 require_once "{$pos_dir}includes/conexionbd.php";
 
 $titulo_pagina = "Lagels | Tejido Artesanal";
@@ -21,5 +22,5 @@ include "{$pos_dir}html/header-admin-inicial.php";
 
 
 <?php
-//$js_extra = '<script src="js/index.js"></script>';
+//$js_extra = "<script src='{$pos_dir}js/index.js'></script>";
 include "{$pos_dir}html/footer.php";

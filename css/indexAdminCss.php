@@ -1,4 +1,7 @@
 <?php header("Content-type: text/css");?>
+body {
+    font-family: 'Capriola';
+}
 
 h1 {
     background: #e89dca;
@@ -42,7 +45,7 @@ em {
 .login-form h1 {
     color: #ccc;
     text-align: center;
-    font-family: 'Vibur', cursive;
+    font-family: 'Capriola', cursive;
     font-size: 50px;
 }
 
@@ -220,11 +223,9 @@ footer {
     height: auto;
 }
 
-@media screen and (max-height: 550px){
-    footer {
-        position: relative;
-        bottom:0;
-        left:0;
-    }
-
+.clear-header {
+    height: 52px;
 }
+
+
+

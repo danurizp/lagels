@@ -28,13 +28,13 @@
             <ol class="indicator"></ol>
         </div>
         
-        <script src="./js/jquery-2.0.2.js"></script>
+        <script src="<?php echo $pos_dir;?>js/jquery-2.0.2.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <script src="./js/stellar.js"></script>
-        <script src="./js/owl.carousel.min.js"></script>
-        <script src="./js/wow.js"></script>
+        <script src="<?php echo $pos_dir;?>js/stellar.js"></script>
+        <script src="<?php echo $pos_dir;?>js/owl.carousel.min.js"></script>
+        <script src="<?php echo $pos_dir;?>js/wow.js"></script>
         
         <script src="https://blueimp.github.io/Gallery/js/blueimp-gallery.js"></script>
         

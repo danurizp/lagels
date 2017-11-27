@@ -26,7 +26,7 @@
     </head>
 
     <body >
-        <main
+        <main>
             <header>
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container-fluid nav-header">
@@ -40,42 +40,23 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-
-
-                                <?php
-                                if ($pag_index) {
-                                    ?>
-                                    <li class="active"><a href="#inicio">Inicio</a></li>
-                                    <li><a href="#mision">Misión</a></li>
-                                    <li><a href="#vision">Visión</a></li>
-                                    <?php
-                                }
-                                ?>
-
-                                <?php
-                                if (count($destacados) > 0) {
-                                    ?>
-                                    <li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Destacados<span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <?php
-                                            foreach ($destacados as $key => $value) {
-                                                echo "<li><a href='#$key'>{$value['titulo']}</a></li>";
-                                            }
-                                            ?>
-                                        </ul>
-                                    </li>
-                                    <?php
-                                }
-                                ?>
-                                <?php
-                                if ($ubicacion) {
-                                    ?>
-                                    <li><a href="#ubicacion">Ubicación</a></li>
-                                    <?php
-                                }
-                                ?>
-
+                                
+                                
+                                
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administración<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../categorias">Categorías</a></li>
+                                        
+                                        <?php
+                                        /*foreach ($destacados as $key => $value) {
+                                            echo "<li><a href='#$key'>{$value['titulo']}</a></li>";
+                                        }*/
+                                        ?>
+                                    </ul>
+                                </li>
+                                <li><a href="../logout.php"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
+                                
                             </ul>
                         </div>
                     </div>
