@@ -19,11 +19,11 @@ $nombre_err = $titulo_err = $frase_err = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Validar name
-    $name = trim($_POST["name"]);
-    if($name == ''){
-        $name_err = "El nombre de la categoría es obligatorio.";
-    } elseif(!filter_var($name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z'-.\s ]+$/")))){
-        $name_err = 'Ingrese un nombre válido.';
+    $nombre = trim($_POST["name"]);
+    if($nombre == ''){
+        $nombre_err = "El nombre de la categoría es obligatorio.";
+    } elseif(!filter_var($nombre, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z'-.\s ]+$/")))){
+        $nombre_err = 'Ingrese un nombre válido.';
     }
     
     // Validar titulo

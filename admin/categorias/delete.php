@@ -17,8 +17,6 @@ include "{$pos_dir}html/header-admin-inicial.php";
 //Si el usuario ya envío el formulario confirmando la eliminación
 if(isset($_POST["id"]) && !empty($_POST["id"])){
     
-    include "{$pos_dir}includes/conexionbd.php";
-
     // Se prepara la instruccion DELETE
     // ** ESCRIBE LA INSTRUCCION SQL PARA BORRAR LA CIUDAD POR SU ID
     // ** LA INSTRUCCIÓN DEBE SER PARAMETRIZADA UTILIZANDO $1

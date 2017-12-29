@@ -2,7 +2,7 @@
 /* Datos de conexión a la base de datos */
 define('DB_SERVER', '127.0.0.1');
 define('DB_USERNAME', 'postgres');
-define('DB_PASSWORD', 'duzpxp78');
+define('DB_PASSWORD', 'admin');
 define('DB_NAME', 'lagels');
 define('DB_PORT', '5432');
 

@@ -15,7 +15,7 @@
         <script src="<?php echo $pos_dir;?>js/wow.js"></script>
         
         
-        <?php echo $js_extra; ?>
+        <?php if($js_extra != ""){ echo $js_extra;} ?>
         
     </body>
 </html>
