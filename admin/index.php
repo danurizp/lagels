@@ -119,5 +119,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </section>
 
 <?php
-//$js_extra = '<script src="js/index.js"></script>';
-include "{$pos_dir}html/footer.php";
+$js_extra = '';
+include "{$pos_dir}html/footer-admin.php";

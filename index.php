@@ -3,6 +3,7 @@ $titulo_pagina = 'Lagels | Tejido Artesanal';
 $estilos_extra = '<link type="text/css" rel="stylesheet" href="css/indexCss.php" />';
 $pag_index = true;
 $ubicacion = false;
+$pos_dir = "";
 
 include 'datos/indexDatos.php';
 
