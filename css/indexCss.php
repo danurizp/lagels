@@ -8,6 +8,7 @@
 
 .img-principal img {
     width: 100%;
+    display: none;
 }
 
 #principal::after {
@@ -72,17 +73,15 @@ em {
     height: 100%;
     background-attachment:fixed;
     background-repeat:no-repeat;
-    <!--background-image:url(../img/productos.jpg);-->
+    background-image:url(../img/ord1.jpg);
     background-size: 100% 100%;
-    background-color: #aaa;
+    
 }
 
 .ordinario img {
-   width: 100%;
+   width: 50%;
    opacity: 0.7;
    filter: alpha(opacity=0); /* For IE8 and earlier */
-   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-   min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 
 .ordinario::after {
@@ -96,17 +95,15 @@ em {
     text-align: center;
     background-attachment:fixed;
     background-repeat:no-repeat;
-    <!--background-image:url(../img/productos.jpg);-->
+    background-image:url(../img/ext1.jpg);
     background-size: 100% 100%;
-    background-color: #fff;
 }
 
 .extraordinario img {
-   width: 100%;
-   opacity: 1;
+   width: 70%;
+   opacity: 0.8;
    filter: alpha(opacity=1); /* For IE8 and earlier */
-   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-   min-height: 100vh; /* These two lines are counted as one :-)       */
+   
 }
 
 .extraordinario::after {
@@ -250,6 +247,20 @@ body {
   padding: 0;
 }
 
+.navbar-nav li a {
+  font-size: 1.5em;
+}
+
+.video {
+   margin-top: 1%;
+}
+
+.bienvenido {
+    height: 100%;
+    text-align: center;
+    background-attachment:fixed;
+    background-image:url(../img/fondo-principal.jpg);
+}
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 480px) {
     .item{
@@ -265,14 +276,17 @@ body {
     
 }
 
+@media only screen and (min-width : 992px) {
+    
+    .img-principal img {
+        display: block;
+    }
+    
+}
+
 @media only screen and (max-width : 992px) {
     .catalogo .vertical-center {
         display: block;
         min-height: auto;
     }
-    
-    .extraordinario {
-        background-size: 100% auto;
-    }
-    
 }

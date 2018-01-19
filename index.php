@@ -16,10 +16,21 @@ include 'html/header.php';
         <h1>Bienvenid@</h1>
     </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row bienvenido">
+            
             <div class="texto-contenido col-md-6 no-padding">
                 <div class="img-principal" ><img src="<?php echo $imagen_principal['src']; ?>"></div>
             </div>
+            
+            <div class="texto-contenido col-md-6 no-padding">
+                <div class="video">
+                    <video width="100%" controls muted poster="img/poster.png">
+                        <source src="video/lagels.mp4" type="video/mp4">
+                        Su navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+            
         </div>
     </div>
     
@@ -50,13 +61,13 @@ include 'html/header.php';
         
         <div class="container-fluid no-padding">
             <div class="row">
-                <div class="col-md-6 no-padding">
+                <div class="col-md-12 no-padding">
                     <div class="ordinario" >
                         <h1>En Lagels transformamos lo ordinario.</h1>
                         <img src="img/estambres.jpg">
                     </div>
                 </div>
-                <div class="col-md-6 no-padding">
+                <div class="col-md-12 no-padding">
                     <div class="extraordinario" >
                         <h1>En algo extraordinario.</h1>
                         <img src="img/productos.jpg">

@@ -1,10 +1,13 @@
             <footer>
                 
                 <div class="redes">
-                    <h2>Visita nuestras redes sociales</h2>
+                    <h2>Para mayores informes, modelos y contacto, por favor visita nuestras redes sociales</h2>
                     <ul>
                         <li>
                             <a class="social facebook wow slideInLeft" data-wow-duration="2s" data-wow-offset="10" href="http://facebook.com/lagels" target="_blank">facebook</a>
+                        </li>
+                        <li>
+                            <a class="social-ico instagram wow swing" data-wow-duration="2s" data-wow-offset="10" href="https://www.instagram.com/lilidelag14/" target="_blank">instagram</a>
                         </li>
                         <li>
                             <a class="social twitter wow slideInRight" data-wow-duration="2s" data-wow-offset="10" href="https://twitter.com/LagelsTejido" target="_blank">twitter</a>

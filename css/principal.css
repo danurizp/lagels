@@ -136,12 +136,23 @@ footer::after {
     overflow: hidden;
 }
 
+.social-ico {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    text-indent: -200px;
+    overflow: hidden;
+}
+
 .social.facebook {
     background-image: url('../img/ico_fb.png');
 }
 
 .social.twitter {
     background-image: url('../img/ico_tw.png');
+}
+.social-ico.instagram {
+    background-image: url('../img/ico_in.ico');
 }
 
 .redes li {

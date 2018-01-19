@@ -147,6 +147,11 @@ $(document).ready(function () {
     for (var i = 0; i < classname.length; i++) {
         classname[i].addEventListener('click', myFunction, false);
     }
+    
+    var video = document.querySelector('video');       
+    video.addEventListener('ended', function() {
+      video.load();     
+    });
 
 });
 
