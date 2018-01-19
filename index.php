@@ -2,7 +2,7 @@
 $titulo_pagina = 'Lagels | Tejido Artesanal';
 $estilos_extra = '<link type="text/css" rel="stylesheet" href="css/indexCss.php" />';
 $pag_index = true;
-$ubicacion = false;
+$ubicacion = true;
 $pos_dir = "";
 
 include 'datos/indexDatos.php';
@@ -15,7 +15,14 @@ include 'html/header.php';
     <div class="titulo-principal">
         <h1>Bienvenid@</h1>
     </div>
-    <div class="img-principal" ></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="texto-contenido col-md-6 no-padding">
+                <div class="img-principal" ><img src="<?php echo $imagen_principal['src']; ?>"></div>
+            </div>
+        </div>
+    </div>
+    
 </section>
 
 <section id="mision">
@@ -40,13 +47,24 @@ include 'html/header.php';
 
 <section>
     <div id="vision"  class="contenido-2">
-        <div class="ordinario" data-stellar-background-ratio="0.1">
-            <h1>En Lagels transformamos lo ordinario.</h1>
+        
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <div class="col-md-6 no-padding">
+                    <div class="ordinario" >
+                        <h1>En Lagels transformamos lo ordinario.</h1>
+                        <img src="img/estambres.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                    <div class="extraordinario" >
+                        <h1>En algo extraordinario.</h1>
+                        <img src="img/productos.jpg">
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /Ordinario -->
-        <div class="extraordinario">
-            <h1 >En algo extraordinario.</h1>
-        </div>
+        
         <!-- /Extraordinario -->
     </div>
 </section>

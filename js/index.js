@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    updateHeight();
+    
     $.stellar({
         horizontalScrolling: false,
         verticalOffset: 0,
@@ -146,5 +148,15 @@ $(document).ready(function () {
         classname[i].addEventListener('click', myFunction, false);
     }
 
-})
+});
+
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.dynamicheight');
+    var width = div.width();
+    
+    div.css('height', width);
+}
 

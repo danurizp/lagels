@@ -75,5 +75,5 @@ include "{$pos_dir}html/header-admin-inicial.php";
 
 
 <?php
-//$js_extra = "<script src='{$pos_dir}js/index.js'></script>";
+$js_extra = "";
 include "{$pos_dir}html/footer-admin.php";

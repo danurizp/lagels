@@ -1,5 +1,6 @@
 <?php
-$imagen_principal['src'] = "https://scontent.fmex3-1.fna.fbcdn.net/v/t1.0-9/12112167_892586384122561_7023459995252952988_n.jpg?oh=35cf28ca375ac9a96f777d112d2d74c9&oe=5A7A1067";
+$imagen_principal['src'] = "img/img-principal.jpg";
+//$imagen_principal['src'] = "https://scontent.fmex3-1.fna.fbcdn.net/v/t1.0-9/12112167_892586384122561_7023459995252952988_n.jpg?oh=35cf28ca375ac9a96f777d112d2d74c9&oe=5A7A1067";
 
 $destacados['bebes']['titulo'] = "Bébes";
 $destacados['bebes']['frase'] = "Lo más tierno y delicado para los consentidos del hogar.";

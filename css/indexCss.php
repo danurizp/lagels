@@ -6,16 +6,8 @@
     margin: auto;
 }
 
-.img-principal {
-    
-    height: 600px;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    
-    background-image:url(https://scontent.fmex3-1.fna.fbcdn.net/v/t1.0-9/12112167_892586384122561_7023459995252952988_n.jpg?oh=35cf28ca375ac9a96f777d112d2d74c9&oe=5A7A1067);
-    /*background-image:url(../img/img-principal.jpg);*/
-    background-size:100% 100%;
-        
+.img-principal img {
+    width: 100%;
 }
 
 #principal::after {
@@ -76,12 +68,21 @@ em {
 }
 
 .ordinario {
-    height: 600px;
+    text-align: center;
+    height: 100%;
     background-attachment:fixed;
     background-repeat:no-repeat;
-    
-    background-image:url(../img/estambres.jpg);
-    background-size:100% 100%;
+    <!--background-image:url(../img/productos.jpg);-->
+    background-size: 100% 100%;
+    background-color: #aaa;
+}
+
+.ordinario img {
+   width: 100%;
+   opacity: 0.7;
+   filter: alpha(opacity=0); /* For IE8 and earlier */
+   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+   min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 
 .ordinario::after {
@@ -91,12 +92,21 @@ em {
 }
 
 .extraordinario {
-    height: 800px;
+    height: 100%;
+    text-align: center;
     background-attachment:fixed;
     background-repeat:no-repeat;
-    
-    background-image:url(../img/productos.jpg);
-    background-size:100% 100%;
+    <!--background-image:url(../img/productos.jpg);-->
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.extraordinario img {
+   width: 100%;
+   opacity: 1;
+   filter: alpha(opacity=1); /* For IE8 and earlier */
+   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+   min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 
 .extraordinario::after {
@@ -236,6 +246,10 @@ body {
   align-items: center;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 480px) {
     .item{
@@ -247,12 +261,18 @@ body {
         padding: 1%;
     }
     
+    
+    
 }
 
 @media only screen and (max-width : 992px) {
     .catalogo .vertical-center {
         display: block;
         min-height: auto;
+    }
+    
+    .extraordinario {
+        background-size: 100% auto;
     }
     
 }

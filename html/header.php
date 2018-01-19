@@ -24,7 +24,7 @@
     </head>
 
     <body >
-        <main
+        <main>
             <header>
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container-fluid nav-header">
